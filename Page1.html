@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample One</title>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+</head>
+<body>
+<p id="content">Choose shipping method:</p>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Shipping Methods ⮟</button>
+    <div id="myDropdown" class="dropdown-content">
+        <form name="createAccountForm" action="javascript:change()" style="display: grid">
+            <input onclick="change()" type="button" id="fast" value="Fast Shipping"/>
+            <input onclick="change1()" type="button" id="normal" value="Normal Shipping"/>
+        </form>
+    </div>
+</div>
+<br>
+<p><span id="message" style="color: red; font-size:25pt;"></span></p>
+<form>
+    <input type="submit" formaction="Page2.html" id="submitButton" value="Next Step">
+</form>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function change(){
+        let fast = document.forms["createAccountForm"]["fast"].value;
+        document.getElementById("message").innerHTML = "You choose the " + fast ;
+
+    }
+    function change1(){
+        let normal = document.forms["createAccountForm"]["normal"].value;
+        document.getElementById("message").innerHTML = "You choose the " + normal;
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

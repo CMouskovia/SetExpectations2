@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+}
+#header1{
+    font-weight: normal;
+    font-size: 70pt;
+}
+#header2{
+    font-size: 50pt;
+}
+#content{
+    font-size: 30pt;
+}
+#fast{
+    font-size: 61pt;
+    height: 100px;
+}
+#normal{
+    font-size: 50pt;
+    height: 100px;
+}
+#submitButton{
+    margin-top: 250px;
+    font-size: 55px;
+    background-color: green;
+    color: white;
+}
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 55px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+#firstText{
+    color:grey;
+}
+#secondText{
+    color:grey;
+}
+#back{
+    font-size: 70px;
+    position: absolute;
+    right: 0px;
+    left: 30px;
+    margin-top: 20px;
+}
+#submitButton2{
+    margin-top: 120px;
+    font-size: 55px;
+    background-color: green;
+    color: white;
+}
+#moreInfo{
+    font-size: 30pt;
+}
